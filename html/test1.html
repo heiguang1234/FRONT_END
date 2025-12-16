@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test01</title>
+    </head>
+    <body>
+        <form>
+            <input id="user01" type="text" name="username" placeholder="Enter your username">
+            <input type="button" value="Submit">
+        </form>
+        <!-- 右键查看源代码展示的是服务器发送的原始字节流 浏览器不做任何处理 直接展示文本 
+         开发者面板显示的是浏览器解析时将html实体转换为对应字符  转换后的<>在这里是普通文本，不是标签-->
+        <p>这是&nbsp;测试</p>
+        <p>这是<script>alert('这是xss测试')</script>测试</p>
+        <p>这是&lt;script&gt;alert('这是xss测试')</script>测试</p>
+    </body>
+</html>
