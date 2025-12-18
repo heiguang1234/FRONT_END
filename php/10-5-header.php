@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <header>
     <title>PHP Test</title>
     <link rel="stylesheet" href="bootstrap.min.css">
@@ -29,8 +28,3 @@
             </ul>
         </div>
     </nav>
-    <?php
-    echo "this is php"; ?>
-<body>
-
-</html>
