@@ -2,6 +2,7 @@
 <html>
     <head>test</head>
     <body>
+<<<<<<< HEAD
         <form id="test1">
             <input type="text" name="username" />
             <input type="password" name="password" />
@@ -10,14 +11,18 @@
         <!-- const stripBracketsRe = /[()]/g;
          /表示正则的开始 /表示正则的结束 g表示在全局进行匹配 [...]表示从这个方括号中任意匹配一个 -->
         <textarea><script>alert(1)</script></textarea>
+=======
+        <p id="'log">单击这个段落所在的窗口就能获得焦点</p>
+>>>>>>> c12f8cc (25-12-18)
         <script>
-            document.getElementById("test1").onsubmit = function(event) {
-                event.preventDefault();
-                const formData = new FormData(event.target);
-                const username = formData.get("username");
-                const password = formData.get("password");
-                document.write(username)
-            };
+           function loseFocus() {
+               document.getElementById("'log").innerText = "窗口失去焦点";
+           }
+           function getFocus() {
+               document.getElementById("'log").innerText = "窗口获得焦点";
+           }
+           window.addEventListener("blur", loseFocus);
+           window.addEventListener("focus", getFocus);
         </script>
     </body>
 </html>
